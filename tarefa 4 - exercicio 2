@@ -1,0 +1,33 @@
+/*
+2) Elaborar um programa que calcule e apresente o volume de uma caixa retangular, 
+por meio da fórmula VOLUME=COMPRIMENTO * LARGURA * ALTURA.
+*/
+
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       
+       System.out.println("Digite o comprimento da caixa: ");
+       double comprimento = sc.nextDouble();
+       
+       System.out.println("Digite a largura da caixa: ");
+       double largura = sc.nextDouble();
+       
+       System.out.println("Digite a altura da caixa: ");
+       double altura = sc.nextDouble();
+       
+       System.out.println("Digite o volume da caixa: ");
+       double volume = calcular(comprimento, largura, altura);
+       
+       System.out.println("O volume da caixa é: "+volume);
+       
+       sc.close();
+
+    }
+     public static double calcular(double comprimento, double largura, double altura) {
+        return comprimento * largura * altura;
+    }
+ }

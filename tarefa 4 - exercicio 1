@@ -1,0 +1,52 @@
+//1) Ler quatro números inteiros e apresentar o resultado da adição e multiplicação, baseando-se na utilização do conceito da propriedade distributiva. 
+//Ou seja, se forem lidas as variáveis A, B, C, e D, devem ser somadas e multiplicadas A com B, A com C e A com D. Depois B com C, B com D e por fim C com D.
+//Perceba que será necessário efetuar seis operações de adição e seis operações de multiplicação e apresentar doze resultados de saída.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        System.out.println("Digite quatro número inteiros:");
+        
+        Scanner sc = new Scanner(System.in);
+        
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        int C = sc.nextInt();
+        int D = sc.nextInt();
+        
+        int su = A + B;
+        int sd = A + C;
+        int st = A + D;
+        int sq = B + C;
+        int sc = B + D;
+        int ss = C + D;
+        
+        int mu = A * B;
+        int md = A * B;
+        int mt = A * D;
+        int mq = B * C;
+        int mc = B * D;
+        int ms = C * D;
+        
+            System.out.println("Resultado da adição:");
+            System.out.println("A soma de A + B, é: "+su);
+            System.out.println("A soma de A + C, é: "+sd);
+            System.out.println("A soma de A + D, é: "+st);
+            System.out.println("A soma de B + C, é: "+sq);
+            System.out.println("A soma de B + D, é: "+sc);
+            System.out.println("A soma de C + D, é: "+ss);
+            
+            System.out.println("Resultado da multiplicação:");
+            System.out.println("A multiplicação de A * B, é: "+mu);
+            System.out.println("A multiplicação de A * C, é: "+md);
+            System.out.println("A multiplicação de A * D, é: "+mt);
+            System.out.println("A multiplicação de B * C, é: "+mq);
+            System.out.println("A multiplicação de B * D, é: "+mc);
+            System.out.println("A multiplicação de C * D, é: "+ms);
+            
+            
+            sc.close();
+        
+        }
+    }
+

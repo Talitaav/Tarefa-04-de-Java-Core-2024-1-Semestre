@@ -1,0 +1,34 @@
+/*
+3) Ler dois inteiros (variáveis A e B) e imprimir o resultado do quadrado da diferença do primeiro valor pelo segundo.
+*/
+
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Digite o valor de A: ");
+        int A = sc.nextInt();
+        
+        System.out.println("Digite o valor de B: ");
+        int B = sc.nextInt();
+        
+        int resultado = calculo(A, B);
+        
+        System.out.println("O quadrado da diferença entre A e B é: "+resultado);
+        
+        sc.close();
+        
+    }
+
+    public static int calculo(A, B) {
+        int diferente = A - B;
+        return diferente * diferente;
+    }
+}
+        
+        
+    
+      
