@@ -1,0 +1,26 @@
+
+/*
+9) Ler o valor correspondente ao salário mensal (variável SM) de um trabalhador e também o 
+valor do percentual de reajuste (variável PR) a ser atribuído. Apresentar o valor do novo salário (variável NS).
+*/
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Informe o valor do sálario mensal: ");
+        double sm  = sc.nextDouble();
+        
+        System.out.println("Informe o percentual do reajuste: ");
+        double pr = sc.nextDouble();
+        
+        double ns = sm * (1 + (pr/100));
+        
+        System.out.println("O novo sálario é: "+ns);
+       
+        
+        sc.close();
+    }
+}
